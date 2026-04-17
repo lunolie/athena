@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiquidBounce Celebrates 10 Years Old</title>
-    <meta property="og:title" content="LiquidBounce Celebrates 10 Years Old!">
+    <title>Terminus Release?</title>
+    <meta property="og:title" content="Terminus Release?">
     <style>
+        @keyframes cool {
+            0% {right: 50px;}
+            50% {right: 25px;}
+            100% {right: 0px;}
+        }
         body {
+            position: relative;
             font-family: Arial;
             color: white;
             background-color: rgb(25, 25, 25);
@@ -14,6 +20,10 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 0 20px;
+            animation-name: cool;
+            animation-duration: 100ms;
+            animation-timing-function: cubic-bezier(0.05,0.1,1,1);
+
         }
         p {
             font-size: large;
